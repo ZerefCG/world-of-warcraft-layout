@@ -1,0 +1,159 @@
+/*=============== RESETS ===============*/
+
+figure{
+    margin-bottom: 0;
+}
+img{
+   width: 100%;
+   height: 100%;
+}
+/* GLOBALS */
+
+:root{
+    --blue:#3fc3f3;
+    --blue-dark-light:#077aa3;
+    --blue-dark:#0478a2;
+    --white-dark:#fcfcfc;
+}
+
+body{
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(2, 45, 71, 0.5), rgba(4, 31, 54, 0.5), rgba(0, 57, 78,0.5)), 
+    url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+   
+}
+
+/*=============== ROW STYLES ===============*/
+
+.row--styles{
+    background-color:transparent;
+    background-image:
+    radial-gradient(circle at 45% 50%, rgba(0, 0, 0, 0.02) 0%, rgba(0, 188, 212, 0.07) 4%, rgb(0, 0, 0) 55%), 
+    url(../img/background.jpg);
+    background-size: cover; 
+    background-attachment: fixed; 
+    border: none;
+    padding: 2rem;
+}
+
+/*=============== NAVIGATION STYLES ===============*/
+
+/* LOGO OF WORLD OF WARCRAFT */
+.navigation__figure{
+    width: 15rem;
+    align-self: center;
+}
+
+.ul__nav{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    
+}
+
+.nav__a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    transition: 0.2s ease-in-out;
+    text-shadow: 0px 0px 2px rgba(0,0,0,0.3);
+}
+
+.nav__a--active{
+    color: var(--blue);
+}
+
+.nav__a:hover{
+    color: var(--blue);
+}
+
+
+/* SOCIALS STYLES */
+
+.socials__a{
+    font-size: 1.3rem;
+    color: var(--white-dark);
+    transition: 0.2s ease-in-out;
+}
+
+.socials__a:hover{
+    color: var(--blue);
+}
+
+
+/*=============== COL OF IMAGE ON THE MIDDLE(SYLVANAS) ===============*/
+
+.background-sylvanas{
+    background-image: url(../img/sylvanas.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 35rem;
+  
+}
+
+/*=============== COL OF DESCRIPTION OF CHAR ===============*/
+
+/* TEXTS STYLES */
+.description__h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+.description__h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--blue);
+}
+
+.description__p{
+    font-size: 1rem;
+    color: var(--white-dark);
+}
+
+/* BLOCK OF ATTRIBUTES ON DESCRIPTION, GENDER, RACE AND LOCATION */
+
+.attributes__h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--white-dark);
+}
+
+.attributes__span{
+    color: var(--blue);
+}
+/* STYLES OF BUTTON */
+.btn-primary{
+    background-color: transparent;
+    font-weight: 500;
+}
+
+.btn-primary:hover{
+    background-color: white;
+    color: black;
+}
+
+/* MEDIA QUERIES */
+
+/* 768px */
+@media screen and (max-width: 768px){
+    .background-sylvanas{
+        background-position: 40%;
+    }
+}
+/* 576px */
+@media screen and (max-width:576px ){
+    .row--styles{
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0.2));
+       
+}
+}
